@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+   name: myquota
+spec:
+  hard:
+    limits.cpu: "400m"
+    limits.memory: "400Mi"
+    requests.cpu: "200m"
+    requests.memory: "200Mi"
+
+
+# this file means we are putting a limit and request rule in our namespace like  here our name space has that much cpus
+# and memory 
+# if some use they can but as per limit
